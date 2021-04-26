@@ -2,12 +2,9 @@ apiVersion: v1
 kind: Route
 metadata:
   name: service-catalog-quarkus-reactive
+  annotations:
+    argocd.argoproj.io/sync-options: Validate=false
 spec:
   to:
     kind: Service
     name: service-catalog-quarkus-reactive
-status:
-  ingress:
-    - conditions:
-        - status: 'True'
-          type: Admitted

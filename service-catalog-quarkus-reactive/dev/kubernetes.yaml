@@ -31,7 +31,7 @@ spec:
     spec:
       containers:
       - name: service-catalog-quarkus-reactive
-        image: image-registry.openshift-image-registry.svc:5000/app-mod-argocd-dev/build-service-catalog-quarkus-reactive:d5e2a92c0df3cd4dd48e1f16067a745e9892ec22
+        image: image-registry.openshift-image-registry.svc:5000/app-mod-argocd-dev/build-service-catalog-quarkus-reactive:ff4a9f2a744122dbf36262e5d69d5f77e0ea2bbe
         ports:
         - containerPort: 8082
         livenessProbe:
